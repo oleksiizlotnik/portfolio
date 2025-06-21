@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* sync vuitify theme bg color with body color */
+body {
+  background-color: rgb(var(--v-theme-background));
+}
+
+:root {
+  --upwork-logo: #000;
+}
+
+.v-theme--dark {
+  --upwork-logo: #fff;
+}
