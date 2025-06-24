@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { useTheme } from 'vuetify'
-import MarketpediaLogo from '@/components/logos/MarketpediaLogo.vue'
-import UpworkLogo from '@/components/logos/UpworkLogo.vue'
+import type { Experience } from '~/assets/types/definitions';
+import experienceData from '~/assets/data/experience';
 
 const theme = useTheme()
 
@@ -10,51 +10,9 @@ const isDark = computed(() => {
   return theme?.global.name.value === 'dark'
 })
 
-type Experience = {
-  company: string,
-  position: string,
-  description: string,
-  stack: string[],
-  logo: any,
-  start_date: string,
-  end_date: string,
-  customColor?: boolean,
-  link: string,
-}
-
-const experiences = ref<Experience[]>([
-  {
-    company: 'Marketpedia',
-    position: 'Full Stack Developer',
-    description: 'Remote, Canada, Startup',
-    stack: ['Vue.js', 'Laravel', 'Inertia.js', 'Typescript', 'Tailwind', 'PostgreSQL', 'Pinia', 'SCSS', 'Shadcn UI', 'Blade', 'Vite', 'Git', 'ChartJS'],
-    logo: MarketpediaLogo,
-    start_date: '2024',
-    end_date: '2025',
-    link: 'https://marketpedia.ca'
-  },
-  {
-    company: 'Marketpedia',
-    position: 'Frontend Developer',
-    description: 'Remote, Canada, Startup',
-    stack: ['Vue.js', 'Tailwind', 'REST API', 'Pinia', 'SCSS', 'Vite', 'Git', 'ChartJS'],
-    logo: MarketpediaLogo,
-    start_date: '2023',
-    end_date: '2024',
-    link: 'https://marketpedia.ca'
-  },
-  {
-    company: 'Upwork',
-    position: 'Frontend Developer',
-    description: 'Remote, Freelance',
-    stack: ['PHP', 'Wordpress', 'MySQL', 'jQuery'],
-    logo: UpworkLogo,
-    start_date: '2017',
-    end_date: '2023',
-    customColor: true,
-    link: 'https://www.upwork.com/freelancers/oleksiizlotnik'
-  }
-])
+const experiences = computed<Experience[]>(() => {
+  return experienceData
+})
 
 const stackColors = ref<string[]>([
   'primary',

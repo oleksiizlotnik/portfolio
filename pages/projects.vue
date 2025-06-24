@@ -1,12 +1,10 @@
+<script lang="ts" setup>
+</script>
+
 <template>
-  <div>
-    
-  </div>
+  <ProjectsGrid />
 </template>
 
-<script lang="ts" setup>
-
-</script>
 
 <style>
 

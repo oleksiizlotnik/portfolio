@@ -1,17 +1,17 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
-
-const expandStack = ref<boolean>(false)
 </script>
 
 <template>
   <div class="space-y-8">
-    <section class="flex flex-col items-center">
+    <section class="flex flex-col items-center space-y-4">
       <img src="../assets/img/oleksii.jpeg" alt="oleksii zlotnik photo" class="w-16 h-16 rounded-full">
-      <h1 class="text-center lg:w-2/5">
-        Hey, I'm Oleksii Zlotnik, Frontend Developer
-      </h1>
+      <HomepageTitle />
+      <HomepageAvailabalityBadge />
+    </section>
 
+    <section>
+      <h2>Projects</h2>
+      <ProjectsSlider />
     </section>
 
     <section>
@@ -25,22 +25,13 @@ const expandStack = ref<boolean>(false)
         </div>
         <div class="col-span-2 lg:col-span-1">
           <h2>Job experience</h2>
-          <JobExperience />
+          <HomepageJobExperience />
         </div>
       </div>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      *Slider here or some fancy block
-    </section>
-
-    <section>
-      <h2>Let's get in touch</h2>
-      *if status is available for projects, then show message 1, otherwise – should message 2
     </section>
 
   </div>
 </template>
 
-<style></style>
+<style>
+</style>
