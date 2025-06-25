@@ -21,3 +21,13 @@ export type Experience = {
   customColor?: boolean,
   link: string,
 }
+
+export type Course = {
+  id: number,
+  title: string,
+  headline: string,
+  url: string,
+  is_published: boolean,
+  rating: number,
+  num_reviews: number,
+}

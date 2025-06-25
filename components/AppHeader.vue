@@ -11,8 +11,8 @@ const links = [
       'label': 'Home'
    },
    {
-      'route': 'projects',
-      'label': 'Projects'
+      'route': 'courses',
+      'label': 'Courses'
    }
 ]
 </script>
