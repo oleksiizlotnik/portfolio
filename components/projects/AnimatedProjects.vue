@@ -14,6 +14,10 @@ const props = withDefaults(defineProps<Props>(), {
   duration: 5000,
 });
 
+const emit = defineEmits<{
+  openProjectModal: [value: number]
+}>()
+
 const active = ref(0);
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -95,7 +99,8 @@ function randomRotateY() {
                 width="500"
                 height="500"
                 :draggable="false"
-                class="size-full rounded-3xl object-cover object-center"
+                class="size-full rounded-3xl object-cover object-center cursor-pointer hover:scale-[105%] transition-all duration-300"
+                @click="emit('openProjectModal', project.id)"
               />
             </Motion>
           </AnimatePresence>
@@ -122,10 +127,10 @@ function randomRotateY() {
             ease: 'easeInOut',
           }"
         >
-          <h3 class="text-2xl font-bold">
+          <h3 class=" cursor-pointer hover:underline" @click="emit('openProjectModal', props.projects[active].id)">
             {{ props.projects[active].name }}
           </h3>
-          <p class="text-sm">
+          <p class="text-sm" v-if="props.projects[active].position">
             {{ props.projects[active].position }}
           </p>
           <Motion
@@ -156,6 +161,32 @@ function randomRotateY() {
               {{ word }}&nbsp;
             </Motion>
           </Motion>
+          <Motion
+              as="div"
+              :initial="{
+                filter: 'blur(10px)',
+                opacity: 0,
+                y: 5,
+              }"
+              :animate="{
+                filter: 'blur(0px)',
+                opacity: 1,
+                y: 0,
+              }"
+              :transition="{
+                duration: 0.5,
+                ease: 'easeInOut',
+                delay: 0.02 * index,
+              }"
+              class="inline-block mt-4"
+            >
+              <v-btn
+                variant="tonal"
+                @click="emit('openProjectModal', props.projects[active].id)"
+              >
+                Read more
+              </v-btn>
+            </Motion>
         </Motion>
         <div class="flex gap-4 pt-12 md:pt-0">
           <v-btn

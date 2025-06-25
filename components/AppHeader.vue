@@ -19,7 +19,7 @@ const links = [
 
 <template lang="">
    <header
-      class="fixed z-10 top-5 left-1/2 -translate-x-1/2 w-wit border border-1 rounded-full backdrop-blur-md"
+      class="fixed z-[100] top-5 left-1/2 -translate-x-1/2 w-wit border border-1 rounded-full backdrop-blur-md"
       :class="isDark ? 'bg-white/30' : 'bg-gray-200/30'"
    >
       <div class="flex gap-3">

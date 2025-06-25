@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="space-y-8">
+  <div class="space-y-14">
     <section class="flex flex-col items-center space-y-4">
       <img src="../assets/img/oleksii.jpeg" alt="oleksii zlotnik photo" class="w-16 h-16 rounded-full">
       <HomepageTitle />
@@ -10,7 +10,7 @@
     </section>
 
     <section>
-      <h2>Projects</h2>
+      <h2 class="text-center">Projects</h2>
       <ProjectsSlider />
     </section>
 
@@ -23,7 +23,7 @@
           <p class="text-sm">Comfortable working in agile, remote teams, including fast-paced SaaS environments.</p>
           <p class="text-sm">Based in Kyiv, Ukraine</p>
         </div>
-        <div class="col-span-2 lg:col-span-1">
+        <div class="col-span-2 lg:col-span-1 space-y-4">
           <h2>Job experience</h2>
           <HomepageJobExperience />
         </div>

@@ -1,3 +1,8 @@
+<script lang="ts" setup>
+import { FlickeringGrid } from '~/components/ui/flickering-grid';
+</script>
+
+
 <template>
   <div>
     <!-- <ClientOnly>
@@ -10,14 +15,10 @@
         :flicker-chance="0.1"
       />
     </ClientOnly> -->
-    <v-container :max-width="800" class="border-x border-1 min-h-screen flex flex-col !pt-[100px] px-8">
+    <v-container :max-width="900" class="border-x border-1 min-h-screen flex flex-col !pt-[100px] px-8">
       <AppHeader />
       <slot />
       <AppFooter/>
     </v-container>
   </div>
 </template>
-
-<script lang="ts" setup>
-import { FlickeringGrid } from '~/components/ui/flickering-grid';
-</script>

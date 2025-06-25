@@ -14,14 +14,6 @@ const experiences = computed<Experience[]>(() => {
   return experienceData
 })
 
-const stackColors = ref<string[]>([
-  'primary',
-  'secondary',
-  'red',
-  'green',
-  'blue',
-  'orange'
-])
 </script>
 
 <template>
@@ -42,7 +34,7 @@ const stackColors = ref<string[]>([
         </div>
         <v-chip-group class="experience-item__stack flex gap-1" column>
           <!-- TODO: color doesn't work -->
-          <v-chip size="x-small" v-for="(stackItem, idx) in item.stack" :color="stackColors[idx]" class="text-[12px]" :key="idx">
+          <v-chip size="x-small" v-for="(stackItem, idx) in item.stack" class="text-[12px]" :key="idx">
             {{ stackItem }}
           </v-chip>
         </v-chip-group>
