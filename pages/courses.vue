@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import { useFetch } from 'nuxt/app'
 import { useSessionStorage } from '@vueuse/core'
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 
 const courses = useSessionStorage('courses', []) // key, default value
 
-onMounted(async () => {
+async function fetchCourses() {
   if (!courses.value || courses.value.length === 0) {
     const { data } = await useFetch('/api/udemy-courses', {
       key: 'courses',
@@ -13,6 +13,16 @@ onMounted(async () => {
     })
     courses.value = data.value
   }
+}
+
+watch(courses, (newVal) => {
+  if (!newVal || newVal.length === 0) {
+    fetchCourses()
+  }
+})
+
+onMounted(async () => {
+  await fetchCourses()
 })
 </script>
 

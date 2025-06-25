@@ -36,6 +36,8 @@ const filteredCourses = computed(() => {
 
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <CoursesGridSkeleton v-if="!filteredCourses.length" />
+    <template v-else>
       <Motion v-for="(course, index) in filteredCourses" :key="course.id || index"
         as="div"
         :initial="{
@@ -64,6 +66,7 @@ const filteredCourses = computed(() => {
             </v-card-actions>
           </v-card>
         </Motion>
+    </template>
   </div>
 </template>
 
