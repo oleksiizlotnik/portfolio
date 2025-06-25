@@ -3,6 +3,10 @@ import { useFetch } from 'nuxt/app'
 import { useSessionStorage } from '@vueuse/core'
 import { ref, onMounted, watch } from 'vue'
 
+useHead({
+  title: 'Courses',
+})
+
 const courses = useSessionStorage('courses', []) // key, default value
 
 async function fetchCourses() {
