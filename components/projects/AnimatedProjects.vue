@@ -58,7 +58,7 @@ function randomRotateY() {
 
 
 <template>
-  <div class="mx-auto max-w-sm px-4 py-10 font-sans antialiased lg:px-12 md:max-w-4xl md:px-8">
+  <div class="mx-auto max-w-sm py-10 font-sans antialiased lg:px-12 md:max-w-4xl md:px-8">
     <div class="relative grid grid-cols-1 gap-20 md:grid-cols-2">
       <div>
         <div class="relative h-80 w-full">

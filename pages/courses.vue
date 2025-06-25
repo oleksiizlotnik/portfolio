@@ -32,6 +32,7 @@ onMounted(async () => {
 
 <template>
   <div>
+    <h1 class="text-center mb-4">My Udemy courses</h1>
     <CoursesGrid :courses="courses" />
   </div>
 </template>

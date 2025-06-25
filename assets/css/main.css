@@ -32,19 +32,19 @@ body {
 }
 
 h1{
-  @apply text-4xl font-outfit
+  @apply text-3xl lg:text-4xl font-outfit
 }
 
 h2{
-  @apply text-3xl font-outfit
+  @apply text-2xl lg:text-3xl font-outfit
 }
 
 h3{
-  @apply text-2xl font-outfit
+  @apply text-xl lg:text-2xl font-outfit
 }
 
 h4{
-  @apply text-xl font-outfit
+  @apply text-lg lg:text-xl font-outfit
 }
 
 @layer base {
