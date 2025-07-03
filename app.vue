@@ -1,4 +1,6 @@
 <script setup>
+import { Analytics } from '@vercel/analytics/nuxt'
+
 useHead({
   titleTemplate: (titleChunk) => {
     return titleChunk ? `${titleChunk} - Oleksii Zlotnik - Frontend Developer` : 'Oleksii Zlotnik - Frontend Developer';
@@ -13,6 +15,7 @@ useHead({
 <template>
 <div>
   <NuxtRouteAnnouncer />
+  <Analytics />
   <NuxtLayout>
     <v-app>
       <NuxtPage />
