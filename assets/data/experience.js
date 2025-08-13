@@ -1,36 +1,59 @@
-import MarketpediaLogo from '@/components/logos/MarketpediaLogo.vue'
-import UpworkLogo from '@/components/logos/UpworkLogo.vue'
+import MarketpediaLogo from "@/components/logos/MarketpediaLogo.vue";
+import UpworkLogo from "@/components/logos/UpworkLogo.vue";
 
 export default [
-   {
-      company: 'Marketpedia',
-      position: 'Full Stack Developer',
-      description: 'Remote, Canada, Startup',
-      stack: ['Vue.js', 'Laravel', 'Inertia.js', 'Typescript', 'Tailwind', 'PostgreSQL', 'Pinia', 'SCSS', 'Shadcn UI', 'Blade', 'Vite', 'Git', 'ChartJS'],
-      logo: MarketpediaLogo,
-      start_date: '2024',
-      end_date: '2025',
-      link: 'https://marketpedia.ca'
-    },
-    {
-      company: 'Marketpedia',
-      position: 'Frontend Developer',
-      description: 'Remote, Canada, Startup',
-      stack: ['Vue.js', 'Tailwind', 'REST API', 'Pinia', 'SCSS', 'Vite', 'Git', 'ChartJS'],
-      logo: MarketpediaLogo,
-      start_date: '2023',
-      end_date: '2024',
-      link: 'https://marketpedia.ca'
-    },
-    {
-      company: 'Upwork',
-      position: 'Frontend Developer',
-      description: 'Remote, Freelance',
-      stack: ['PHP', 'Wordpress', 'MySQL', 'jQuery'],
-      logo: UpworkLogo,
-      start_date: '2017',
-      end_date: '2023',
-      customColor: true,
-      link: 'https://www.upwork.com/freelancers/oleksiizlotnik'
-    }
- ]
+  {
+    company: "Marketpedia",
+    position: "Full Stack Developer",
+    description: "Remote, Canada, Startup",
+    stack: [
+      "Vue.js",
+      "Laravel",
+      "Inertia.js",
+      "Typescript",
+      "Tailwind",
+      "PostgreSQL",
+      "Pinia",
+      "SCSS",
+      "Shadcn UI",
+      "Blade",
+      "Vite",
+      "Git",
+      "ChartJS",
+    ],
+    logo: MarketpediaLogo,
+    start_date: "Dec 2024",
+    end_date: "June 2025",
+    link: "https://marketpedia.ca",
+  },
+  {
+    company: "Marketpedia",
+    position: "Frontend Developer",
+    description: "Remote, Canada, Startup",
+    stack: [
+      "Vue.js",
+      "Tailwind",
+      "REST API",
+      "Pinia",
+      "SCSS",
+      "Vite",
+      "Git",
+      "ChartJS",
+    ],
+    logo: MarketpediaLogo,
+    start_date: "Dec 2022",
+    end_date: "Dec 2024",
+    link: "https://marketpedia.ca",
+  },
+  {
+    company: "Upwork",
+    position: "Frontend Developer",
+    description: "Remote, Freelance",
+    stack: ["PHP", "Wordpress", "MySQL", "jQuery"],
+    logo: UpworkLogo,
+    start_date: "Aug 2018",
+    end_date: "Dec 2022",
+    customColor: true,
+    link: "https://www.upwork.com/freelancers/oleksiizlotnik",
+  },
+];
