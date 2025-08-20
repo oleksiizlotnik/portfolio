@@ -11,10 +11,16 @@ const links = [
       'label': 'Home'
    },
    {
-      'route': 'courses',
+      'route': '/projects',
+      'label': 'Projects'
+   },
+   {
+      'route': '/courses',
       'label': 'Courses'
    }
 ]
+
+const currentRoute = useRouter().currentRoute;
 </script>
 
 <template lang="">
@@ -30,7 +36,7 @@ const links = [
            class="text-decoration-none"
          >
            <v-btn
-             variant="text"
+             :variant="currentRoute.path == link.route ? 'elevated' : 'text'"
              rounded="xl"
              size="small"
              :class="isDark ? 'text-white' : 'text-black'"
