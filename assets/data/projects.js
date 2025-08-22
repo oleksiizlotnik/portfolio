@@ -6,7 +6,7 @@ export default [
       "A modern B2B web application using Vue.js 3 (Composition API), TypeScript, and Inertia.js, connected to a Laravel 10 backend.",
     description:
       "A modern B2B web application using Vue.js 3 (Composition API), TypeScript, and Inertia.js, connected to a Laravel 10 backend. I helped building a single-page survey app with smart questions, matrixes, custom reports, dashboards, admin pages etc.</br></br>- Developed dynamic and responsive user interfaces using Shadcn-vue components and Tailwind CSS.</br></br>-Managed frontend–backend data flow via Inertia.js, enabling seamless server-side rendering without traditional APIs.</br></br>- Collaborated on team-based features using Laravel Jetstream, including team management and authentication.",
-    position: "Full stack developer | Remote, Full time, Canada",
+    position: "Vue.js Frontend developer | Remote, Full time, Canada",
     stack: [
       "Vue.js",
       "Laravel",
