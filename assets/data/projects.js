@@ -51,6 +51,7 @@ export default [
       "Strapi CMS",
     ],
     url: "https://react-ecommerce-aj5x.onrender.com/",
+    github_url: "https://github.com/oleksiizlotnik/react-ecommerce",
     image: "/img/projects/react-ecomm/6.jpeg",
     all_images: [
       "/img/projects/react-ecomm/6.jpeg",
@@ -114,6 +115,7 @@ export default [
       "NuxtUI Pro",
     ],
     url: "https://wishlister.online/",
+    github_url: "https://github.com/oleksiizlotnik/wishList",
     image: "/img/projects/wishlister/1.jpeg",
     all_images: [
       "/img/projects/wishlister/1.jpeg",

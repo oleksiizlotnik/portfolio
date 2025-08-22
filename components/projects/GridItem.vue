@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import type { Project } from '~/assets/types/definitions';
+import { GithubIcon } from 'lucide-vue-next';
 
 withDefaults(defineProps<{
   project: Project
@@ -22,9 +23,13 @@ const emit = defineEmits<{
       </div>
     </v-card-item>
 
-    <v-card-actions>
+    <v-card-actions class="flex justify-between">
       <v-btn @click="emit('openProjectModal', project.id)">
         Learn more
+      </v-btn>
+      <v-btn v-if="project.github_url"
+        @click.stop="() => navigateTo(project.github_url, { external: true, open: { target: '_blank' } })">
+        <GithubIcon /> Github
       </v-btn>
     </v-card-actions>
   </v-card></template></template>
