@@ -1,7 +1,29 @@
 import MarketpediaLogo from "@/components/logos/MarketpediaLogo.vue";
 import UpworkLogo from "@/components/logos/UpworkLogo.vue";
+import KeyappLogo from '~/components/logos/KeyappLogo.vue';
 
 export default [
+  {
+    company: "Keyapp",
+    position: "Frontend Developer",
+    description: "Remote, Kyiv, Ukraine",
+    stack: [
+      "Vue.js",
+      "Typescript",
+      "Javascript",
+      "Bootstrap CSS",
+      "REST API",
+      "Pinia",
+      "Vuex",
+      "SCSS",
+      "Vite",
+      "Git",
+    ],
+    logo: KeyappLogo,
+    start_date: "Sep 2025",
+    end_date: "Now",
+    link: "https://keyapp.top",
+  },
   {
     company: "Marketpedia",
     position: "Frontend Developer",

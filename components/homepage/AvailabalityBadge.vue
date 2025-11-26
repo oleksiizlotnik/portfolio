@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { motion } from 'motion-v';
 
-const status = ref<'not-available' | 'available'>('available')
+const status = ref<'not-available' | 'available'>('not-available')
 
 function bookMetting() {
   if (status.value !== 'available')
