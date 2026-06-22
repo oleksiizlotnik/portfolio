@@ -27,7 +27,7 @@ useHead({
     <div class="grid grid-cols-2 gap-8">
       <div class="col-span-2 lg:col-span-1 space-y-4">
         <h2>About me</h2>
-        <p class="text-sm">Frontend Developer with 7+ years of experience building scalable, user-focused web
+        <p class="text-sm">Frontend Developer with 4+ years of experience building scalable, user-focused web
           applications, with a strong focus on Vue.js and the modern JavaScript ecosystem.</p>
         <p class="text-sm">Skilled in developing SPAs using Vue 3 (Composition API) and TypeScript, and in creating
           responsive, accessible UIs with clean component architecture. </p>
