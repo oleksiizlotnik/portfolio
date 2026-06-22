@@ -68,7 +68,7 @@ onMounted(() => {
     }"
     class="inline-block lg:w-3/4 text-zinc-400 text-center"
 >
-    Frontend Developer with 7+ years of experience building scalable, user-focused web applications, with a strong focus
+    Frontend Developer with 4+ years of experience building scalable, user-focused web applications, with a strong focus
     on Vue.js and the modern JavaScript ecosystem.
 </Motion>
 </template>
